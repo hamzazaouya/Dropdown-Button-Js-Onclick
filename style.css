@@ -1,0 +1,73 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mybtn {
+    position: relative;
+    background-color: #4caf50;
+    height: 4rem;
+    width: 10rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.mybtn span {
+    line-height: 4rem;
+    color: #FFF;
+    font-size: 1.4rem
+    
+}
+
+#down {
+    height: 10px;
+    margin-left: .4rem;
+    transition: .3s;
+}
+
+.mybtn ul {
+    display: none;
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #F9F9F9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.mybtn ul a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    padding: 0 1rem;
+    line-height: 2.5rem;
+    width: 13rem;
+    text-align: left;
+}
+
+.mybtn ul li:not(:last-of-type) a{
+    border-bottom: 1px solid #DDD;
+}
+
+.mybtn ul a:hover {
+    background-color: #f1f1f1;
+}
+
+ul.show {display: block}
+
+img.down {
+    transform: rotate(540deg)
+}
